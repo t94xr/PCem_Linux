@@ -9,7 +9,7 @@ There is very little to basically no documentation on how to install/compile PCe
 <pre>
 sudo apt update && sudo apt upgrade -y
 
-sudo apt-get install libsdl2-dev libwxgtk3.0-dev libopenal-dev
+sudo apt-get install libsdl2-dev libwxgtk3.0-dev libopenal-dev gcc make g++
 
 mkdir PCemV17Linux/
 wget -c https://pcem-emulator.co.uk/files/PCemV17Linux.tar.gz
@@ -20,7 +20,7 @@ cd PCemV17Linux
 make
 </pre>
 
-If build has completed successfully, running <code>./pcem</code> will complain about missing BIOS files.
+If build has completed successfully, running <code>./pcem</code> will complain about missing BIOS ROM files.
 
 # PCem ROMS 
 <pre>
