@@ -2,11 +2,10 @@
 
 There is very little to basically no documentation on how to install/compile PCem 17 for Linux.
 
+# Ubuntu 21.04
 ### Notes
 - Update system, so systemd gets upgraded to latest version. libsdl2-dev will not install if it hasn't been upgraded.
 - ***Required:*** You will need the Universe Repo enabled, for libsdl2-dev, libwxgtk3.0-dev and libopenal-dev
-
-# Ubuntu 21.04
 <pre>
 sudo apt update && sudo apt upgrade -y
 
