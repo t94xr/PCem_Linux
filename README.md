@@ -5,22 +5,24 @@ There is very little to basically no documentation on how to install/compile PCe
 # Ubuntu 21.04
 ### Notes
 - Update system, so systemd gets upgraded to latest version. libsdl2-dev will not install if it hasn't been upgraded.
-- ***Required:*** You will need the Universe Repo enabled, for libsdl2-dev, libwxgtk3.0-dev and libopenal-dev
+- ***Required:*** You will need the Universe Repo enabled, for libsdl2-dev, libwxgtk3.0-gtk3-dev and libopenal-dev
 <pre>
 sudo apt update && sudo apt upgrade -y
 
-sudo apt-get install libsdl2-dev libwxgtk3.0-dev libopenal-dev gcc make g++
+sudo apt-get install libsdl2-dev libwxgtk3.0-gtk3-dev libopenal-dev gcc make g++
 
 mkdir PCemV17Linux/
 wget -c https://pcem-emulator.co.uk/files/PCemV17Linux.tar.gz
 tar -xvzf PCemV17Linux.tar.gz --directory PCemV17Linux
 cd PCemV17Linux
 
-./configure --enable-alsa --enable-release-build --enable-networking --prefix=/usr
-make
+./configure --enable-alsa --enable-release-build --enable-networking --prefix=/opt/pcem17
+make -j5
+sudo make install
+
 </pre>
 
-If build has completed successfully, running <code>./pcem</code> will complain about missing BIOS ROM files.
+If build has completed successfully, running <code>/opt/pcem17/bin/pcem</code> will complain about missing BIOS ROM files.
 
 # PCem ROMS 
 <pre>
@@ -31,4 +33,4 @@ git clone https://github.com/BaRRaKudaRain/PCem-ROMs.git
 mv PCem-ROMs roms
 </pre>
 
-Running <code>./pcem</code> should appear with the PCem dialog.
+Running <code>/opt/pcem17/bin/pcem</code> should appear with the PCem dialog.
