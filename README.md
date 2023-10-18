@@ -22,7 +22,12 @@ sudo make install
 
 </pre>
 
-If build has completed successfully, running <code>/opt/pcem17/bin/pcem</code> will complain about missing BIOS ROM files.
+Once the 'make install' command has been completed, try running the following terminal command to ensure it is now working on your machine:
+<pre>
+  /opt/pcem17/bin/pcem
+</pre>
+
+If build has completed successfully, running the <code>/opt/pcem17/bin/pcem</code> terminal command will complain about missing BIOS ROM files.
 
 # PCem ROMS 
 <pre>
