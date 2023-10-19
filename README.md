@@ -2,7 +2,7 @@
 
 There is very little to basically no documentation on how to install/compile PCem 17 for Linux.
 
-# Ubuntu 21.04
+# Ubuntu 21.04/Mint 21.2
 ### Notes
 - Update system, so systemd gets upgraded to latest version. libsdl2-dev will not install if it hasn't been upgraded.
 - ***Required:*** You will need the Universe Repo enabled, for libsdl2-dev, libwxgtk3.0-gtk3-dev and libopenal-dev
@@ -39,3 +39,4 @@ mv PCem-ROMs roms
 </pre>
 
 Running <code>/opt/pcem17/bin/pcem</code> should appear with the PCem dialog.
+Create a  Shortcut to it by right clicking on the PCEM on the first lunch and then you will see it added among your programs.
