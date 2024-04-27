@@ -2,6 +2,10 @@
 
 There is very little to basically no documentation on how to install/compile PCem 17 for Linux.
 
+## WAYLAND SUPPORT
+
+PCem 17 does not have any Wayland Support. It does appear that [PCem 18](https://pcem-emulator.co.uk/phpBB3/viewtopic.php?t=3799) is on the horizon _which should support Wayland_, but it will be a while as this is a hobby project and therefore development is slow.
+
 # Ubuntu 21.04/Mint 21.2
 ### Notes
 - Update system, so systemd gets upgraded to latest version. libsdl2-dev will not install if it hasn't been upgraded.
